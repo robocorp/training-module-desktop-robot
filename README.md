@@ -1,11 +1,12 @@
-# Training - RPA Developer: Module 3 Desktop and Image based automation
+# Training - RPA Developer
+## Module 3 Desktop and Image based automation
 
 This repository contains example implementations of automating Windows Notepad application and Windows GnuCash application.
 
 ## Links
 
-[Training slides](resources/training_module3.pdf)
-[Finding locators](https://robocorp.com/docs/development-guide/desktop/how-to-find-user-interface-elements-using-locators-and-keyboard-shortcuts-in-windows-applications)
+- [Training slides](resources/training_module3.pdf)
+- [Finding locators](https://robocorp.com/docs/development-guide/desktop/how-to-find-user-interface-elements-using-locators-and-keyboard-shortcuts-in-windows-applications)
 
 ## Notepad
 
