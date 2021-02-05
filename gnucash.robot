@@ -1,5 +1,6 @@
 *** Settings ***
-Documentation   Template robot main suite.
+Documentation   Open GnuCash application and add new account.
+..              Does not save changes when application is closed.
 Library   RPA.Desktop
 
 
@@ -31,7 +32,7 @@ Add new account
     Wait For Element   ocr:"Grand Total"
 
 *** Tasks ***
-Case GnuCash 
+Case GnuCash
     Open GnuCash
     Add New Account   OCR testing   1337  Found by OCR and region locators
     Close GnuCash

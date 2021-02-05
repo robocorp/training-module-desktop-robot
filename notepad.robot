@@ -3,6 +3,7 @@ Documentation   Opens test.txt with associated application (expects Notepad).
 ...             Changes font settings and copies text from clipboard to edit window.
 ...             Saves the text.
 Library  RPA.Desktop.Windows
+Library  OperatingSystem
 Library  String
 
 
@@ -33,14 +34,23 @@ Write Notepad Message
     ${message}=  Windows Text Replacer   ${message}
     Type Into   class:Edit  ${message}
 
-*** Tasks ***
-Case Notepad
-    Open File   ${CURDIR}${/}test.txt  Notepad   wildcard=True
-    Change Font Settings  style=Italic  size=18  name=Times New Roman
-    Write Notepad Message    ^a{VK_CLEAR}  # Clear Notepad editor
+*** Keywords ***
+Copy Text From Clipboard
     Send Keys    ^v{ENTER}
     Sleep  1s
+
+*** Keywords ***
+Notepad Save And Exit
     Menu Select  File->Save
     Sleep  3s  # For demo purpose
     Menu Select  File->Exit
+
+*** Tasks ***
+Case Notepad
+    Copy File   ${CURDIR}${/}test.txt  ${OUTPUTDIR}${/}workfile.txt
+    Open File   ${OUTPUTDIR}${/}workfile.txt  Notepad   wildcard=True
+    Change Font Settings  style=Italic  size=18  name=Times New Roman
+    Write Notepad Message    ^a{VK_CLEAR}  # Clear Notepad editor
+    Copy Text From Clipboard
+    Notepad Save And Exit
     [Teardown]   Close All Applications
