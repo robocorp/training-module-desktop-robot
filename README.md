@@ -12,6 +12,8 @@ This repository contains example implementations of automating Windows Notepad a
 
 Library in use: [RPA.Desktop.Windows](https://robocorp.com/docs/libraries/rpa-framework/rpa-desktop-windows)
 
+Automation is implemented using UI Automation properties.
+
 Task steps:
 
 1. copies template txt file into work txt file, and opens the file with associated application (expecting it to be Notepad)
@@ -23,6 +25,8 @@ Task steps:
 ## GnuCash
 
 Library in use: [RPA.Desktop](https://robocorp.com/docs/libraries/rpa-framework/rpa-desktop)
+
+Automation is implemented using image recognition and OCR.
 
 Task steps:
 
