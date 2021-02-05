@@ -1,0 +1,20 @@
+{
+    "GnuCash.NewAccount": {
+        "confidence": 80.0,
+        "path": ".images\\gnucash-newaccount-path.png",
+        "source": ".images\\gnucash-newaccount-source.png",
+        "type": "image"
+    },
+    "GnuCash.Open": {
+        "confidence": 84.0,
+        "path": ".images\\gnucash-open-path.png",
+        "source": ".images\\gnucash-open-source.png",
+        "type": "image"
+    },
+    "Notepad.AboutLogo": {
+        "confidence": 80.0,
+        "path": ".images\\notepad-aboutlogo-path.png",
+        "source": ".images\\notepad-aboutlogo-source.png",
+        "type": "image"
+    }
+}
